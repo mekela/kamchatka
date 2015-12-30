@@ -2,16 +2,96 @@
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 1330px) {
+  .social{
+  	position: static;
+  	padding: 15px 0 0 0;
+  }
+  .services_images{
+  	height: auto;
+  	padding-bottom: 20px;
+    background-size: cover;
+  	p{
+  		width: auto;
+  		margin: 0 5%;
+  	}
+  }
 }
 
 //styles for ipad
 @include ipad {
-	
+	.menu{
+		font-size: 18px;
+	}
+	.about_us p{
+		width: auto;
+  		margin: 0 5%;
+	}
+}
+
+@include mq($max-width: 767px) {
+	.time_head{
+		right: auto;
+		left: 3%;
+	}
+	.menu{
+		font-size: 18px;
+	}
+	.about_us p{
+		width: auto;
+  		margin: 0 5%;
+	}
+	.services_wrap article div{
+		float: none;
+		width: 100%;
+		padding: 15px 3%;
+	}
+	.services_images p{
+		padding: 0 0%;
+	}
+}
+
+@include mq($max-width: 600px) {
+	.contacts_wrap form, .contacts_txt{
+		width: auto;
+	}
+	.contacts_wrap form .button{
+		float: none;
+		margin: auto;
+	}
+	.container{
+		padding: 0 2%
+	}
+	img{
+		max-width: 100%;
+	}
+	.vip_wrap{
+		height: auto;
+		padding: 50px 0;
+	}
+	.vip_wrap nav a {
+	    display: inline-block;
+	    width: 40%;
+	    height: 100%;
+	    padding: 15% 0;
+	    background: #fff;
+	    font-size: 40px;
+	    text-decoration: none;
+	    line-height: 1.5;
+	    text-transform: uppercase;
+	    font-weight: 400;
+	}
 }
 
 //styles for iphone
 @include iphone5 {
-
+	.time_head{
+		display: none;
+	}
+	.menu li{
+		display: block;
+	}
+	.logo_wrap{
+		text-align: center;
+	}
 } 
