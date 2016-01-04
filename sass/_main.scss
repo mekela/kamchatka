@@ -78,6 +78,13 @@
 		padding: 32px 0;
 		text-align: center;
 		position: relative;
+		&.fixed{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 20;
+		}
 	}
 		.menu{
 			font-size: 28px;
@@ -117,6 +124,7 @@
  	.logo_wrap{
  		height: 487px;
  		background:url(../img/bg2.png) no-repeat center;
+ 		 @include background_fixed('');
 
  	}
  		.logo{
@@ -146,6 +154,7 @@
 	.vip_wrap{
 		height: 440px;
  		background:url(../img/bg3.png) no-repeat center;
+ 		 @include background_fixed('');
  		box-sizing: border-box;
  		padding: 58px 0 0 0;
  		text-align: center;
@@ -194,6 +203,7 @@
 
 	.services_images{
 		background:transparent url('../img/bg4.png') center no-repeat;
+		 @include background_fixed('');
 		height: 457px;
 		figure{
 			padding: 112px 0 24px 0;

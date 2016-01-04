@@ -18,4 +18,18 @@ $(document).ready(function() {
 	    slideMargin: 0,
 	    pager: false
 	  });
+
+	//wow
+	new WOW().init();
+});
+
+//fixed header
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 300) {
+        $(".head_menu").addClass("fixed");
+    } else {
+        $(".head_menu").removeClass("fixed");
+    }
 });

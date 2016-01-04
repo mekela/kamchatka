@@ -349,6 +349,14 @@ textarea::-webkit-input-placeholder {
   position: relative;
 }
 
+.head_menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
 .menu {
   font-size: 28px;
   color: #6d726e;
@@ -390,6 +398,8 @@ textarea::-webkit-input-placeholder {
 .logo_wrap {
   height: 487px;
   background: url(../img/bg2.png) no-repeat center;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
 }
 
 .logo {
@@ -419,6 +429,8 @@ textarea::-webkit-input-placeholder {
 .vip_wrap {
   height: 440px;
   background: url(../img/bg3.png) no-repeat center;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
   box-sizing: border-box;
   padding: 58px 0 0 0;
   text-align: center;
@@ -473,6 +485,8 @@ textarea::-webkit-input-placeholder {
 
 .services_images {
   background: transparent url("../img/bg4.png") center no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
   height: 457px;
 }
 
@@ -614,6 +628,9 @@ h3 {
   .services_images p {
     width: auto;
     margin: 0 5%;
+  }
+  .head_menu.fixed {
+    position: static !important;
   }
 }
 

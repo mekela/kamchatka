@@ -16,6 +16,11 @@
   		margin: 0 5%;
   	}
   }
+  .head_menu{
+  	&.fixed{
+  		position: static !important; 
+  	}
+  }
 }
 
 //styles for ipad

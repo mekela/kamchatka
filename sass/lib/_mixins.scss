@@ -3,6 +3,12 @@
 position: relative;
 overflow: hidden;
 }
+
+@mixin background_fixed($bgfixed) {
+background-size: 100vw 100vh;
+background-attachment: fixed;
+}
+
 //buttons and inputs
 
 @mixin button($button){
