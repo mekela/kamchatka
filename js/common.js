@@ -21,6 +21,12 @@ $(document).ready(function() {
 
 	//wow
 	new WOW().init();
+
+	//show hide route
+	$( ".routes_item dt" ).click(function() {
+	  $( this ).next().slideToggle();
+	});
+
 });
 
 //fixed header
