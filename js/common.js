@@ -19,6 +19,14 @@ $(document).ready(function() {
 	    pager: false
 	  });
 
+	$('.gallery_slider ul').bxSlider({
+	    slideWidth: 313,
+	    minSlides: 1,
+	    maxSlides: 20,
+	    slideMargin: 7,
+	    pager: false
+	  });
+
 	//wow
 	new WOW().init();
 
