@@ -120,6 +120,27 @@
 			margin-bottom: 10px;
 			display: block;
 		}
+
+	.map_route figure{
+		width: auto;
+		margin: 0 0 20px 0 ;
+		float: none;
+	}
+	.under_table p{
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.map_route table td, .map_route table th{
+		font-size: 11px;
+		border-left-width: 1px;
+		span{
+			padding: 0;
+			&:before{
+				display: none;
+			}
+		}
+	}
 }
 
 //styles for iphone
