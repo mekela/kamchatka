@@ -907,6 +907,14 @@ h3 {
   font-size: 20px;
 }
 
+.map_route h3 a, .map_route h6 a {
+  text-decoration: none;
+}
+
+.map_route h3 a:hover, .map_route h6 a:hover {
+  text-decoration: underline;
+}
+
 .map_route table {
   width: 100%;
   text-align: center;
@@ -970,25 +978,25 @@ h3 {
   opacity: 0.7;
 }
 
-.map_route.blue {
+.map_route:nth-child(2n) {
   background: #37b8cd;
   color: #356f71;
 }
 
-.map_route.blue figure {
+.map_route:nth-child(2n) figure {
   border-color: #82dbe9;
 }
 
-.map_route.blue table th, .map_route.blue table td {
+.map_route:nth-child(2n) table th, .map_route:nth-child(2n) table td {
   border-color: #37b8cd;
 }
 
-.map_route.blue table th {
+.map_route:nth-child(2n) table th {
   background: #fff385;
   color: #474b01;
 }
 
-.map_route.blue table td {
+.map_route:nth-child(2n) table td {
   color: #e8f88b;
 }
 
