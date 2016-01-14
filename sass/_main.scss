@@ -8,7 +8,7 @@
  	/*---------slider-head---------*/
 	.head_slider{
 		text-align: center;
-		height: auto;
+		max-height: 207px;
 		width: 100%;
 		position: relative;
 		ul li img{
@@ -101,7 +101,7 @@
 				}
 			}
 		}
-		.social{
+		.social, .cnss-social-icon{
 			position: absolute;
 			right: 40px;
 			top: 43px;
