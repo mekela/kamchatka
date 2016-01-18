@@ -31,8 +31,13 @@ $(document).ready(function() {
 	new WOW().init();
 
 	//show hide route
-	$( ".routes_item dt" ).click(function() {
-	  $( this ).next().slideToggle();
+	// $( ".routes_item dt" ).click(function() {
+	//   $( this ).next().slideToggle();
+	// });
+
+	//form item
+	$( ".js-order_btn" ).click(function() {
+	   $(".js-hidden-tour").val($(this).attr('data-decription'));
 	});
 
 });
