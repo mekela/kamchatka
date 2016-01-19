@@ -22,6 +22,7 @@
 			<script src="js/modernizr.custom.js"></script>
 			<script src="js/wow.min.js"></script>
 			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/count.js"></script>
 			<script src="js/common.js"></script>
 			<!--[if IE]>  
 				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
@@ -34,8 +35,8 @@
 <header class="header">
 	<div class="head_slider">
 		<div class="time_head">
-			<span>Время до:</span>
-			<strong>00:00:00:00</strong>
+			<em>Время до:</em>
+			<strong id="timer"></strong>
 		</div>
 		<ul>
 			<li><img src="img/bg1.png" alt=""></li>
@@ -64,7 +65,14 @@
 	
 	<div class="logo_wrap">
 		<div class="container">
-			<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+			<a href="/" class="logo"><img src="img/logo.png" alt="">
+				<span>
+					<strong>КамчаткаГИД</strong>
+					<b>Туристско- <br>
+					информационое <br>
+					агенство</b>
+				</span>
+			</a>
 			<div><a href="#order_tour" class="fancybox button">ссылка кнопка</a></div>
 		</div>
 	</div>

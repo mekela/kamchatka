@@ -323,7 +323,8 @@ textarea::-webkit-input-placeholder {
   text-align: left;
 }
 
-.time_head span {
+.time_head em {
+  font-style: normal;
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
@@ -405,6 +406,26 @@ textarea::-webkit-input-placeholder {
 .logo {
   display: block;
   margin: 107px 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.logo span {
+  position: absolute;
+  top: 20px;
+  left: 166px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 0.8;
+}
+
+.logo span strong {
+  display: block;
+  font-size: 56px;
+}
+
+.logo span b {
+  text-transform: uppercase;
 }
 
 .about_us {
@@ -583,14 +604,14 @@ h3 {
 }
 
 .partners_wrap h3 {
-  color: #858a4b;
+  color: #fff;
 }
 
 .partners_wrap .bx-wrapper .bx-controls-direction a {
-  width: 41px;
+  width: 50px;
   height: 50px;
   background: url("../img/arrow_slider.png") center no-repeat;
-  margin-top: -20px;
+  margin-top: -27px;
 }
 
 .partners_wrap .bx-wrapper .bx-prev {
@@ -604,7 +625,7 @@ h3 {
 
 .partners_slider {
   padding: 15px 80px;
-  background: #858a4b;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /*----------end main----------*/

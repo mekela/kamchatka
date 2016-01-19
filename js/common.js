@@ -39,6 +39,22 @@ $(document).ready(function() {
 	$( ".js-order_btn" ).click(function() {
 	   $(".js-hidden-tour").val($(this).attr('data-decription'));
 	});
+	
+	//timer
+	var countdown = new Countdown({
+		selector: '#timer',
+		msgBefore: "Скоро будет акция",
+		msgAfter: "Акция закончилась!",
+		msgPattern: "<span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>",
+		dateStart    : new Date(),
+     	dateEnd      : new Date('2016/02/14 10:54:00'),
+		onStart: function() {
+			//console.log('Акция!');
+		},
+		onEnd: function() {
+			//console.log('Кончилася!');
+		}
+	});
 
 });
 

@@ -54,7 +54,8 @@
 			z-index: 50;
 			width: 120px;
 			text-align: left;
-			span{
+			em{
+				font-style: normal;
 				font-size: 14px;
 				text-transform: uppercase;
 				color: #fff;
@@ -130,6 +131,23 @@
  		.logo{
 			display: block;
 			margin: 107px 0;
+			position: relative;
+			text-decoration: none;	
+			span{
+				    position: absolute;
+				    top: 20px;
+				    left: 166px;
+				    font-size: 30px;
+				    color: #fff;
+				    line-height: 0.8;
+				strong{
+					display: block;
+					font-size: 56px;
+				}
+				b{
+					text-transform: uppercase;
+				}
+			}
  		}
 
 	
@@ -284,13 +302,13 @@
 		text-align: center;
 		padding: 32px 0 70px 0;
 		h3{
-			color: #858a4b;
+			color: #fff;
 		}
 		.bx-wrapper .bx-controls-direction a{
-			width: 41px;
+			width: 50px;
 			height: 50px;
 			background: url('../img/arrow_slider.png') center no-repeat;
-			margin-top: -20px;
+			margin-top: -27px;
 		}
 		.bx-wrapper .bx-prev{
 			left: -67px;
@@ -302,7 +320,7 @@
 	}
 		.partners_slider{
 			padding: 15px 80px;
-			background:#858a4b;
+			background:rgba(0,0,0, 0.3);
 			
 		}
 /*----------end main----------*/	
@@ -751,3 +769,4 @@ text-align: center;
 		}
 
 	}	
+
