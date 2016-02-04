@@ -76,7 +76,7 @@
 	/*--------menu---------*/
 	.head_menu{
 		background:#ebecec;
-		padding: 32px 0;
+		padding: 13px 0; 
 		text-align: center;
 		position: relative;
 		&.fixed{
@@ -105,7 +105,7 @@
 		.social, .cnss-social-icon{
 			position: absolute;
 			right: 40px;
-			top: 43px;
+			top: 22px;
 			li{
 				display: inline-block;
 				padding: 0 3px;
@@ -123,7 +123,7 @@
  }
 
  	.logo_wrap{
- 		height: 487px;
+ 		height: 953px ;
  		background:url(../img/bg2.png) no-repeat center;
  		 @include background_fixed('');
 
@@ -209,13 +209,16 @@
 		article{
 			overflow: hidden;
 			div{
-				float: left;
+				margin: auto;
 				width: 50%;
 				box-sizing: border-box;
-				padding: 0 3%;
 				font-size: 15px;
 				text-align: left;
 			}
+		}
+		p{
+			width: 50%;
+			margin: auto;
 		}
 	}
 
@@ -283,8 +286,10 @@
 			p{
 				color: #fff;
 				font-size: 18px;
-				border-bottom: 2px solid #fff;
-				padding-bottom: 10px;
+				&:last-child{
+					border-bottom: 2px solid #fff;
+					padding-bottom: 10px;
+				}
 			}
 			nav{
 				padding: 10px 0 0 0;
@@ -402,11 +407,16 @@
 		margin-bottom: 35px;
 		vertical-align: top;
 		@include povh('');
+		transition: all 0.5s ease;
 		figure {
+			transition: all 0.5s ease;
 			img{
 				display: block;
 				border: 18px solid #fff;
-
+				filter: gray; 
+				  filter: grayscale(1); 
+				  -webkit-filter: grayscale(1); 
+				  transition: all 0.5s ease;
 				
 			}
 		}
@@ -450,9 +460,9 @@
 			}
 			figure{
 				img{
-					 filter: gray; 
-				  filter: grayscale(1); 
-				  -webkit-filter: grayscale(1); 
+					filter: none; 
+				  filter: grayscale(0); 
+				  -webkit-filter: grayscale(0); 
 				  transition: all 0.5s ease;
 				}
 			}
@@ -770,3 +780,12 @@ text-align: center;
 
 	}	
 
+.to_top{
+	position: fixed;
+	bottom: 4%;
+	right: 4%;
+	z-index: 50;
+	img{
+		width: 40px;
+	}
+}
