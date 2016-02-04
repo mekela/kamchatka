@@ -76,7 +76,7 @@
 	/*--------menu---------*/
 	.head_menu{
 		background:#ebecec;
-		padding: 13px 0; 
+		padding: 20px 0; 
 		text-align: center;
 		position: relative;
 		&.fixed{
@@ -88,7 +88,7 @@
 		}
 	}
 		.menu{
-			font-size: 28px;
+			font-size: 18px;
 			color: #6d726e;
 			li{
 				display: inline-block;
@@ -124,6 +124,7 @@
 
  	.logo_wrap{
  		height: 953px ;
+ 		text-align: center;
  		background:url(../img/bg2.png) no-repeat center;
  		 @include background_fixed('');
 
@@ -133,20 +134,26 @@
 			margin: 107px 0;
 			position: relative;
 			text-decoration: none;	
+			text-align: center;
 			span{
-				    position: absolute;
+				   	position: static;
 				    top: 20px;
 				    left: 166px;
 				    font-size: 30px;
 				    color: #fff;
-				    line-height: 0.8;
+				    line-height: 1;
 				strong{
 					display: block;
 					font-size: 56px;
 				}
 				b{
+					display: block;
+					padding-top: 20px;
 					text-transform: uppercase;
 				}
+			}
+			div{
+				text-align: center;
 			}
  		}
 
@@ -170,23 +177,23 @@
 	}
 
 	.vip_wrap{
-		height: 440px;
+		height: 950px;
  		background:url(../img/bg3.png) no-repeat center;
  		 @include background_fixed('');
  		box-sizing: border-box;
- 		padding: 58px 0 0 0;
+ 		padding: 15% 0 0 0;
  		text-align: center;
  		nav{
  			display: block;
  			font-size: 0;
  			a{
  				display: inline-block;
- 				width: 195px;
- 				height: 195px;
+ 				width: 350px;
+ 				height: 324px;
  				background:#fff;
  				font-size: 40px;
  				text-decoration: none;
- 				line-height: 195px;
+ 				line-height: 324px;
  				text-transform: uppercase;
  				font-weight: 400;
  				&:hover, &.active{
@@ -218,6 +225,7 @@
 		}
 		p{
 			width: 50%;
+			font-size: 15px;
 			margin: auto;
 		}
 	}

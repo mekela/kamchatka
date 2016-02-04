@@ -125,11 +125,11 @@ textarea::-webkit-input-placeholder { color: inherit; }
 
 /*--------end-slider-head---------*/
 /*--------menu---------*/
-.head_menu { background: #ebecec; padding: 13px 0; text-align: center; position: relative; }
+.head_menu { background: #ebecec; padding: 20px 0; text-align: center; position: relative; }
 
 .head_menu.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 20; }
 
-.menu { font-size: 28px; color: #6d726e; }
+.menu { font-size: 18px; color: #6d726e; }
 
 .menu li { display: inline-block; margin: 0 2%; font-weight: 300; }
 
@@ -146,15 +146,17 @@ textarea::-webkit-input-placeholder { color: inherit; }
 /*----------main----------*/
 .main { position: relative; overflow: hidden; }
 
-.logo_wrap { height: 953px; background: url(../img/bg2.png) no-repeat center; background-size: cover; background-attachment: fixed; }
+.logo_wrap { height: 953px; text-align: center; background: url(../img/bg2.png) no-repeat center; background-size: cover; background-attachment: fixed; }
 
-.logo { display: block; margin: 107px 0; position: relative; text-decoration: none; }
+.logo { display: block; margin: 107px 0; position: relative; text-decoration: none; text-align: center; }
 
-.logo span { position: absolute; top: 20px; left: 166px; font-size: 30px; color: #fff; line-height: 0.8; }
+.logo span { position: static; top: 20px; left: 166px; font-size: 30px; color: #fff; line-height: 1; }
 
 .logo span strong { display: block; font-size: 56px; }
 
-.logo span b { text-transform: uppercase; }
+.logo span b { display: block; padding-top: 20px; text-transform: uppercase; }
+
+.logo div { text-align: center; }
 
 .about_us { background: #fecc00; padding: 27px 0 40px 0; text-align: center; font-size: 15px; }
 
@@ -162,11 +164,11 @@ textarea::-webkit-input-placeholder { color: inherit; }
 
 .about_us p { width: 50%; margin: auto; }
 
-.vip_wrap { height: 440px; background: url(../img/bg3.png) no-repeat center; background-size: cover; background-attachment: fixed; box-sizing: border-box; padding: 58px 0 0 0; text-align: center; }
+.vip_wrap { height: 950px; background: url(../img/bg3.png) no-repeat center; background-size: cover; background-attachment: fixed; box-sizing: border-box; padding: 15% 0 0 0; text-align: center; }
 
 .vip_wrap nav { display: block; font-size: 0; }
 
-.vip_wrap nav a { display: inline-block; width: 195px; height: 195px; background: #fff; font-size: 40px; text-decoration: none; line-height: 195px; text-transform: uppercase; font-weight: 400; }
+.vip_wrap nav a { display: inline-block; width: 350px; height: 324px; background: #fff; font-size: 40px; text-decoration: none; line-height: 324px; text-transform: uppercase; font-weight: 400; }
 
 .vip_wrap nav a:hover, .vip_wrap nav a.active { background: #fecc00; }
 
@@ -178,7 +180,7 @@ textarea::-webkit-input-placeholder { color: inherit; }
 
 .services_wrap article div { margin: auto; width: 50%; box-sizing: border-box; font-size: 15px; text-align: left; }
 
-.services_wrap p { width: 50%; margin: auto; }
+.services_wrap p { width: 50%; font-size: 15px; margin: auto; }
 
 .services_images { background: transparent url("../img/bg4.png") center no-repeat; background-size: cover; background-attachment: fixed; height: 457px; }
 
